@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/newsletter.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <title>NEWSLETTER: Mundo Viajante</title>
+  <style>
+    .nav__link {
+      font-size: 20px; /* Altera o tamanho da fonte */
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="index.html" class="nav__link" style="color: #ffffff;">HOME</a>
+      <a href="newsletter.html" class="nav__link active">NEWSLETTER</a>
+      <button class="toggle-theme" id="theme-toggle">🌙</button>
+    </nav>
+    <div class="header__content">
+      <h1 class="header__title">NEWSLETTER: Mundo Viajante</h1>
+      <p class="header__subtitle">Mantenha-se Informado!</p>
+    </div>
+  </header>
+
+  </header>
+
+  <main class="main">
+    <section class="form-section">
+      <h2 class="section__title">Inscreva-se:</h2>
+      <form class="form">
+        <label for="nome" class="form__label">Nome:</label>
+        <input type="text" id="nome" class="form__input" placeholder="Nome Completo" required>
+        <label for="email" class="form__label">E-mail:</label>
+        <input type="email" id="email" class="form__input" placeholder="exemplo@email.com" required>
+        <label for="telefone" class="form__label">Telefone:</label>
+        <input type="tel" id="telefone" class="form__input" placeholder="(xx) xxxxx-xxxx" required>
+        <fieldset class="form__input">
+          <legend class="form__label">Informe o Sexo:</legend>
+          <label class="form__label">
+            Masculino: <input type="checkbox" id="masculino" class="form__input">
+          </label>
+          <label class="form__label">
+            Feminino: <input type="checkbox" id="feminino" class="form__input">
+          </label>
+          <label class="form__label">
+            Outro: <input type="checkbox" id="outro" class="form__input">
+          </label>
+        </fieldset>
+
+        <label for="estado" class="form__label">Estado:</label>
+        <select name="estado" class="form__input">
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+        <label for="comentarios" class="form__label">Comentários:</label>
+        <textarea class="form__text" name="comentarios" rows="3" placeholder="Alguma observação?"></textarea>
+
+        <button type="submit" class="form__button">Enviar</button>
+      </form>
+    </section>
+
+    <section class="advantages-section">
+      <h2 class="section__title">Vantagens:</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">Promoções exclusivas</li>
+        <li class="advantages__item">Dicas de viagem imperdíveis</li>
+        <li class="advantages__item">Novidades em primeira mão</li>
+        <li class="advantages__item">Consultoria personalizada</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer__nav">
+      <a href="#header" class="footer__link">Início</a>
+    </nav>
+    <div class="footer__content">
+      <p>Assine nossa newsletter para receber atualizações e dicas de viagens!</p>
+      <a href="newsletter.html">
+        <button class="footer__button">Assinar</button>
+      </a>
+    </div>
+    <p class="footer__legal">
+      <a href="#" class="footer__link">Política de Privacidade</a> |
+      <a href="#" class="footer__link">Termos de Uso</a>
+    </p>
+    <p class="footer__copy">&copy; 2024 Mundo Viajante. Todos os direitos reservados.</p>
+  </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>

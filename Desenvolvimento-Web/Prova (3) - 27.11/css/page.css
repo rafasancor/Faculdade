@@ -1,0 +1,380 @@
+/* CSS Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", Sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Estilização do header com imagem de fundo */
+#capa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 100x;
+  /* Ocupa a tela inteira */
+  color: #000000;
+  text-align: center;
+  position: relative;
+}
+
+/* Menu de navegação no cabeçalho */
+#cabecalho {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 38%;
+  display: flex;
+  justify-content: space-between;
+  /* Distribui os itens nas extremidades */
+  align-items: center;
+  padding: 0 20px;
+  /*Margem interna para dar espaçamento nas laterais*/
+  background-color: #112e53;
+}
+
+#cabecalho nav a {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+#cabecalho nav a:hover {
+  color: #cecece;
+}
+
+/* Estilização do título no centro */
+#capa h1 {
+  font-family: 'Montserrat', sans-serif;
+  /* Google Font */
+  font-size: 5rem;
+  margin: 0;
+  padding-top: 80px;
+  /* Ajusta o espaço entre o menu e o título */
+  /* text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5); Sombra no texto */
+  letter-spacing: 1px;
+  /* Espaçamento entre letras */
+}
+
+#imagemcont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  overflow:hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  
+}
+
+
+/* Estilo da Seção Meio */
+#meio {
+  background-color: #ffffff;
+  /*Fundo claro */
+  padding: 2rem;
+}
+
+/* Estilo da seção principal */
+#destinos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+/* Estilo para cada destino de viagem */
+.destino {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Estilo para as imagens dos destinos */
+.imagem-destino {
+  flex: 1;
+  max-width: 50%;
+}
+
+.imagem-destino img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para a descrição dos destinos */
+.descricao-destino {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.descricao-destino h3 {
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.descricao-destino p {
+  font-size: 1.1em;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+.descricao-destino a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #124374;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Estilo para o hover do link */
+.descricao-destino a:hover {
+  background-color: #005bb5;
+}
+
+#tabela {
+  width: 100%;
+  padding: 30px 0px 70px;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+#tabela table {
+  width: 90%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#tabela caption h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+#tabela th {
+  background-color: #112e53;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+#tabela td {
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+
+}
+
+table,
+th,
+td {
+  border: 2px solid #ddd;
+}
+
+#tabela tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Estilo do Rodapé */
+footer {
+  background-color: #020202;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  color: #ccc;
+}
+
+footer .newsletter {
+  margin-top: 2rem;
+}
+
+footer button {
+  padding: 0.8rem 2rem;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer button:hover {
+  background-color: #555;
+}
+
+footer .legal p {
+  color: white;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Responsividade para Tablets e Smartphones */
+@media (max-width: 1024px) {
+  #cabecalho {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  #cabecalho nav a {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  #capa h1 {
+    font-size: 3rem;
+  }
+
+  .destino {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .imagem-destino,
+  .descricao-destino {
+    max-width: 100%;
+  }
+
+  .descricao-destino h3 {
+    font-size: 1.5rem;
+  }
+
+  .descricao-destino p {
+    font-size: 1rem;
+  }
+
+  #tabela {
+    padding: 20px 0;
+  }
+
+  #tabela table {
+    width: 100%;
+  }
+}
+
+/* Responsividade para Smartphones */
+@media (max-width: 768px) {
+  #cabecalho {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #cabecalho nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #cabecalho nav a {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  #capa h1 {
+    font-size: 2.5rem;
+  }
+
+  .destino {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .imagem-destino img {
+    width: 100%;
+    height: auto;
+  }
+
+  .descricao-destino h3 {
+    font-size: 1.3rem;
+  }
+
+  .descricao-destino p {
+    font-size: 0.9rem;
+  }
+
+  .descricao-destino a {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Ajuste para telas maiores (Desktop) */
+@media (min-width: 1025px) {
+  #cabecalho {
+    height: 60px;
+  }
+
+  #cabecalho nav a {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+  }
+
+  #capa h1 {
+    font-size: 5rem;
+  }
+
+  .destino {
+    flex-direction: row;
+  }
+
+  .imagem-destino,
+  .descricao-destino {
+    max-width: 50%;
+  }
+
+  .descricao-destino h3 {
+    font-size: 2rem;
+  }
+
+  .descricao-destino p {
+    font-size: 1.1rem;
+  }
+}
